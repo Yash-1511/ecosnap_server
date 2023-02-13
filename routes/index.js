@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const authRoutes = require("./auth");
 const userRoutes = require("./user")
-router.get('/check',(req,res)=>{
+router.get('/',(req,res)=>{
     res.send("Welcome to our API");
 })
 

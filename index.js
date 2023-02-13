@@ -18,7 +18,9 @@ setupDB();
 require('./config/passport')(app);
 
 // routes
-
+app.get('/',(req,res)=>{
+    res.send("<h1> Welcome To EcoSnap </h1>")
+})
 app.use('/api',routes);
 app.use("*", (req, res) => res.status(404).json('No API route found'));
 

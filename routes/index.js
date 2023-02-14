@@ -9,5 +9,4 @@ router.get('/check',(req,res)=>{
 router.use('/',authRoutes);
 router.use('/',userRoutes);
 router.use('/',eventRoutes);
-
 module.exports = router;
